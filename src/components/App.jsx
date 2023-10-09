@@ -7,15 +7,19 @@ import NotFound from 'pages/NotFound';
 //import styled from 'styled-components';
 import { Container, Header, Logo, StyledLink } from './App.styled';
 import { ProductDetails } from 'pages/ProductDetails';
+import Mission from './Mission/Mission';
+import Team from './Team/Team';
+import Reviews from './Reviews/Reviews';
+
 
 export const App = () => {
   return (
     <Container>
       <Header>
-      <Logo>
+        <Logo>
           <span role="img" aria-label="computer icon">
             💻
-          </span>{" "}
+          </span>{' '}
           GoMerch Store
         </Logo>
         <nav>
@@ -28,7 +32,11 @@ export const App = () => {
       </Header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About />}>
+          <Route path="mission" element={<Mission />} />
+          <Route path="team" element={<Team />} />
+          <Route path="reviews" element={<Reviews />} />
+        </Route>
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="*" element={<NotFound />} />
