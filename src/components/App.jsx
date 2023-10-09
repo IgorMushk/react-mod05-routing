@@ -11,10 +11,10 @@ import Mission from './Mission/Mission';
 import Team from './Team/Team';
 import Reviews from './Reviews/Reviews';
 import SharedLayout from './SharedLayout/SharedLayout';
-import AdminLayout from './AdminLayout/AdminLayout';
-import Dashboard from './Dashboard/Dashboard';
-import Sales from './Sales/Sales';
-import Customers from './Customers/Customers';
+// import AdminLayout from './AdminLayout/AdminLayout';
+// import Dashboard from './Dashboard/Dashboard';
+// import Sales from './Sales/Sales';
+// import Customers from './Customers/Customers';
 
 export const App = () => {
   return (
