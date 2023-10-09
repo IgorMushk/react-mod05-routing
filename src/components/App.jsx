@@ -30,11 +30,11 @@ export const App = () => {
         <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="*" element={<NotFound />} />
       </Route>
-      <Route path="/admin" element={<AdminLayout />}>
+      {/* <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="sales" element={<Sales />} />
         <Route path="customers" element={<Customers />} />
-      </Route>
+      </Route> */}
     </Routes>
   );
 };
