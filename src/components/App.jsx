@@ -1,32 +1,36 @@
-import { Link, NavLink, Route, Routes } from "react-router-dom";
-import About from "../pages/About";
-import Home from "../pages/Home";
-import Products from "../pages/Products";
-import NotFound from "pages/NotFound";
-import styled from "styled-components";
-
-const StyledLinkd = styled(NavLink)`
-  color: black;
-  &.active {
-    color:  orange;
-  }
-  `;
+//import { Link, NavLink, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import About from '../pages/About';
+import Home from '../pages/Home';
+import Products from '../pages/Products';
+import NotFound from 'pages/NotFound';
+//import styled from 'styled-components';
+import { Container, Header, Logo, StyledLink } from './App.styled';
 
 export const App = () => {
   return (
-<div>
-    <nav>
-      <StyledLinkd  to='/'>Home </StyledLinkd >
-      <StyledLinkd  to='/about'>About </StyledLinkd >
-      <StyledLinkd  to='/produts'>Products </StyledLinkd >
-    </nav>
-
-  <Routes>
-    <Route path='/' element={<Home/>} />
-    <Route path='/about' element={<About/>} />
-    <Route path='/products' element={<Products/>}/>
-    <Route path='*' element={<NotFound/>}/>
-  </Routes>
-</div>
+    <Container>
+      <Header>
+      <Logo>
+          <span role="img" aria-label="computer icon">
+            💻
+          </span>{" "}
+          GoMerch Store
+        </Logo>
+        <nav>
+          <StyledLink to="/" end>
+            Home{' '}
+          </StyledLink>
+          <StyledLink to="/about">About </StyledLink>
+          <StyledLink to="/products">Products </StyledLink>
+        </nav>
+      </Header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Container>
   );
 };
