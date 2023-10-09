@@ -6,6 +6,7 @@ import Products from '../pages/Products';
 import NotFound from 'pages/NotFound';
 //import styled from 'styled-components';
 import { Container, Header, Logo, StyledLink } from './App.styled';
+import { ProductDetails, ProductDetaols } from 'pages/ProductDetails';
 
 export const App = () => {
   return (
@@ -29,6 +30,7 @@ export const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:productId" element={<ProductDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Container>
