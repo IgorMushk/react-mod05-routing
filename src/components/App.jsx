@@ -6,7 +6,7 @@ import Products from '../pages/Products';
 import NotFound from 'pages/NotFound';
 //import styled from 'styled-components';
 import { Container, Header, Logo, StyledLink } from './App.styled';
-import { ProductDetails, ProductDetaols } from 'pages/ProductDetails';
+import { ProductDetails } from 'pages/ProductDetails';
 
 export const App = () => {
   return (
