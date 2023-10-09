@@ -1,9 +1,12 @@
+import ProductList from 'components/ProductList/ProductList';
+import { getProducts } from 'fakeAPI';
 import React from 'react';
 
 const Products = () => {
+  const products = getProducts();
   return (
     <main>
-      <h1>Products page</h1>
+      <ProductList products={products} />
     </main>
   );
 };
