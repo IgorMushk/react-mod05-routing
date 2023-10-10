@@ -3,7 +3,7 @@ import { getProductById } from 'fakeAPI';
 import React from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
-export const ProductDetails = () => {
+const ProductDetails = () => {
   const { id } = useParams();
   const product = getProductById(id);
   //console.log(product);
@@ -30,3 +30,5 @@ export const ProductDetails = () => {
     </main>
   );
 };
+
+export default ProductDetails

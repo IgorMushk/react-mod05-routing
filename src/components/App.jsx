@@ -19,7 +19,7 @@ import { lazy } from 'react';
 
 const About = lazy(() => import("../pages/About"));
 const Home = lazy(() => import("../pages/Home"));
-const ProductDetails = lazy(() => import("pages/ProductDetails"));
+const ProductDetails = lazy(() => import("../pages/ProductDetails"));
 const Products = lazy(() => import("../pages/Products"));
 const Mission = lazy(() => import("./Mission/Mission"));
 const Team = lazy(() => import("./Team/Team"));
