@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_mod05_routing=self.webpackChunkreact_mod05_routing||[]).push([[415],{415:function(i,t,e){e.r(t);e(791);var a=e(184);t.default=function(){return(0,a.jsxs)("main",{children:[(0,a.jsx)("img",{src:"https://via.placeholder.com/960x240",alt:""}),(0,a.jsx)("p",{children:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, laboriosam placeat incidunt rem illum animi nemo quibusdam quia voluptatum voluptate."})]})}}}]);
+//# sourceMappingURL=415.c16f8852.chunk.js.map
