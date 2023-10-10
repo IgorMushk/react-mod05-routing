@@ -1,7 +1,7 @@
 //import { Container, Header, Logo, StyledLink } from 'components/App.styled'
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import { Container, Header, Logo, StyledLink } from './SharedLayout.styled'
+import React, { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
+import { Container, Header, Logo, StyledLink } from './SharedLayout.styled';
 
 const SharedLayout = () => {
   return (
@@ -19,9 +19,11 @@ const SharedLayout = () => {
           <StyledLink to="/products">Products </StyledLink>
         </nav>
       </Header>
-      <Outlet />
+      <Suspense fallback={<div>Loading page...</div>}>
+        <Outlet />
+      </Suspense>
     </Container>
-  )
-}
+  );
+};
 
-export default SharedLayout
+export default SharedLayout;
